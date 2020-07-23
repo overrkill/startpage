@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Lobster&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +22,7 @@
     font-size: 3rem;
     color: snow;
     justify-content: space-between;
+    font-family: 'Lobster', cursive;
 }
 
 .name{
@@ -34,12 +37,14 @@
 
 .search-txt{
     background-color: rgba(94, 94, 94, 0.575);
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
     outline: none;
     border: none;
     min-height: 2.5rem;
     padding-left: 1rem;
     border-radius: 20px;
-    color: rgb(0, 255, 213);
+    color: rgb(181, 247, 236);
     margin: 40px;
 }
 
@@ -49,11 +54,27 @@
 }
 .buttons button{
 border: none;
-border-radius: 50%;
-height: 2rem;
-width: 2rem;
+background-color: rgba(94, 94, 94, 0);
+font-family: 'Fira Code','monospace';
+font-weight: bolder;
 }
 
+.google{
+    color: rgb(245, 218, 65);
+}
+
+.ddgo{
+    color: rgb(152, 245, 65);
+}
+.yt{
+    color: rgb(245, 65, 89);
+}
+.reddit{
+    color: rgb(245, 131, 65);
+}
+.wiki{
+    color: rgb(113, 65, 245);
+}
 .buttons button:hover{
     background-color: slategray;
 }
