@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+}
+
+
+.greet{
+    display: flex;
+    font-size: 3rem;
+    color: snow;
+    justify-content: space-between;
+}
+
+.name{
+    color: rgb(0, 255, 213);
+    font-weight: bold;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 70vw
+}
+
+.search-txt{
+    background-color: rgba(94, 94, 94, 0.575);
+    outline: none;
+    border: none;
+    min-height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 20px;
+    color: rgb(0, 255, 213);
+    margin: 40px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons button{
+border: none;
+border-radius: 50%;
+height: 2rem;
+width: 2rem;
+}
+
+.buttons button:hover{
+    background-color: slategray;
+}
