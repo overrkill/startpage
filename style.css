@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+.theme-light{
+    background-color: rgb(240, 240, 240);
+    color: rgb(31, 31, 31);
+}
+.theme-dark{
+    color: snow;
+    background-color: rgb(31, 31, 31);
+}
 .container{
     height: 100vh;
     width: 100vw;
@@ -13,21 +21,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(31, 31, 31);
+   
 }
 
 .clock{
     position: absolute;
     top: 10px;
     right: 10px;
-    color: skyblue;
+   
     font-size: 1.5rem;
     font-family: 'Fira Code','monospace';
 }
 .greet{
     display: flex;
     font-size: 3rem;
-    color: snow;
     justify-content: space-between;
     font-family: 'Lobster', cursive;
 }
@@ -49,39 +56,66 @@
     outline: none;
     border: none;
     min-height: 2.5rem;
+    min-width: 40ch;
     padding-left: 1rem;
     border-radius: 20px;
     color: rgb(181, 247, 236);
-    margin: 40px;
+    margin: 40px 0 40px 0;
 }
 
 .buttons{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .buttons button{
 border: none;
-background-color: rgba(94, 94, 94, 0);
+min-width: 10ch;
+padding: 0.5rem;
+border-radius: 25px;
 font-family: 'Fira Code','monospace';
 font-weight: bolder;
 }
 
 .google{
-    color: rgb(245, 218, 65);
+    background-color: rgb(245, 218, 65);
 }
 
 .ddgo{
-    color: rgb(152, 245, 65);
+    background-color: rgb(152, 245, 65);
 }
 .yt{
-    color: rgb(245, 65, 89);
+    background-color: rgb(245, 65, 89);
 }
 .reddit{
-    color: rgb(245, 131, 65);
+    background-color: rgb(245, 131, 65);
 }
 .wiki{
-    color: rgb(113, 65, 245);
+    background-color: rgb(113, 65, 245);
 }
 .buttons button:hover{
     background-color: slategray;
+}
+
+#themer{
+    position: absolute;
+    bottom:10px ;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: rgba(94, 94, 94, 0.575);
+}
+@media (max-width:480px){
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        
+    }
+    .buttons button{
+        margin-top: 10px;
+    }
 }
