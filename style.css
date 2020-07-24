@@ -7,7 +7,7 @@
 }
 
 .theme-light{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(249, 250, 237);
     color: rgb(31, 31, 31);
 }
 .theme-dark{
@@ -29,7 +29,7 @@
     top: 10px;
     right: 10px;
    
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Fira Code','monospace';
 }
 .greet{
@@ -57,10 +57,10 @@
     border: none;
     min-height: 2.5rem;
     min-width: 40ch;
-    padding-left: 1rem;
     border-radius: 20px;
     color: rgb(181, 247, 236);
     margin: 40px 0 40px 0;
+    text-align: center;
 }
 
 .buttons{
@@ -107,6 +107,14 @@ font-weight: bolder;
     outline: none;
     border: none;
     background-color: rgba(94, 94, 94, 0.575);
+}
+
+.credits{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 0.7rem;
+    font-family: monospace;
 }
 @media (max-width:480px){
     .buttons{

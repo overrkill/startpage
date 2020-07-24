@@ -71,3 +71,35 @@ thmButtom.addEventListener('click', () => {
         thmButtom.innerHTML = "☀️"
     }
 })
+
+//search 
+
+const searchButtons = document.getElementsByClassName("button");
+
+const searchEngine = [
+    "https://www.google.com/search?q=",
+    "https://duckduckgo.com/?q=",
+    "https://www.youtube.com/results?search_query=",
+    "https://reddit.com/r/",
+    "https://en.wikipedia.org/wiki/"
+
+
+]
+
+for (let i = 0; i < 5; i++) {
+    searchButtons[i].addEventListener("click", () => {
+        if (search[0].value) {
+            window.location.href = `${searchEngine[i]}${search[0].value}`
+        }
+
+    })
+}
+
+search[0].addEventListener('keydown', event => {
+    if (event.keyCode === 13) {
+        console.log('going')
+        if (search[0].value) {
+            window.location.href = `https://duckduckgo.com/?q=${search[0].value}`
+        }
+    }
+})
